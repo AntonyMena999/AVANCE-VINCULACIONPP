@@ -24,7 +24,7 @@
     </div>
 
     <!-- Dialog -->
-    <p-dialog header="Gestión de Categoría" [(visible)]="dialog_visible" [modal]="true"
+    <p-dialog header="Datos de cita" [(visible)]="dialog_visible" [modal]="true"
         [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '40vw' }" [draggable]="false"
         [resizable]="false" class="p-fluid">
         <form [formGroup]="categoriaForm">
@@ -58,7 +58,7 @@
         <ng-template pTemplate="footer">
             <button pButton pRipple label="Cancelar" icon="pi pi-times" class="p-button-text"
                 (click)="dialog_visible=false"></button>
-            <button pButton pRipple label="Guardar" icon="pi pi-check" class="p-button-primary"
+            <button pButton pRipple label="Enviar" icon="pi pi-check" class="p-button-primary"
                 (click)="guardarCategoria()"></button>
         </ng-template>
     </p-dialog>
